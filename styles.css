@@ -1,0 +1,111 @@
+body {
+    font-size: 20;
+    background-color: #fff0ff;
+    font-family:'Times New Roman', Times, serif; 
+  }
+  
+  h1 {
+    font-size: 45; 
+    margin-bottom: 5; 
+    color: #db70ff; 
+    
+  }
+  
+  a {
+    color: #bf58d1; 
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    color: #9827c8; 
+  }
+
+  p {
+    line-height: 3; 
+  }
+  
+  #contacts a {
+    color: #ff6ca5; 
+    font-weight: bold; 
+  }
+
+  #contacts a:hover {
+    color: #ff0062; 
+    font-weight: bold; 
+  }
+  
+  .important {
+    color: #007bff !important; 
+  }
+
+  .center{
+    text-align: center;
+  }
+ol {
+    list-style-type: upper-roman; 
+    color: #ff00b7; 
+    font-family: Arial, sans-serif; 
+    margin: 100px; 
+  }
+  
+  ul {
+    list-style-type: circle; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    background-color: #bf58d1;
+    padding: 20px;
+  }
+  
+  dl {
+    margin: 1em; 
+  }
+  
+  dt {
+    font-weight: bold; 
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 1em auto; 
+  }
+  
+  th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+  }
+
+  .astronaut-table {
+    margin: 0 auto; 
+  }
+  
+  .astronaut-table th {
+    background-color: #D235D2; 
+    text-align: center; 
+  }
+  
+  .astronaut-table td {
+    text-align: center; 
+  }
+
+  .mission-table {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+  
+  .mission-table th {
+    background-color: #D235D2; 
+    text-align: center; 
+  }
+  
+  .mission-table td {
+    text-align: left; 
+  }
+
+  .mission-table td:nth-child(2) { 
+    text-align: center; 
+  }
+
+  .mission-table td:nth-child(3) { 
+    text-align: right; 
+  }
+  
+  

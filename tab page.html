@@ -1,80 +1,79 @@
-<! DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Burunduk">
   <title>Space Box</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <h1 class="center">Astronauts</h1>
 
-<body bgcolor="#e0daff">
-
-  <center>
-  <h2>Astronauts</h2>
-
-  <table border="1">
-    <tr height = "50">
-        <th bgcolor="#D235D2">Photo</th>
-        <th bgcolor="#D235D2" width="500">Biography</th>
-        <th bgcolor="#D235D2">Quote</th>
-    </tr>
-    <tr>
-        <td><img src="./а1.jpg" alt="Astronaut 1" width="300"></td>
-        <td align="center"><a href="https://bio1">Michael Fincke</a></td>
-        <td><i>"To fly in space is to see the reality of Earth, alone."</i></td>
-    </tr>
-    <tr>
-        <td><img src="./а2.jpg" alt="Astronaut 2" width="300"></td>
-        <td align="center"><a href="https://bio2">Nickolas Kavandi</a></td>
-        <td><i>"Exploration is wired into our brains. If we can see the horizon, we want to know what's beyond."</i></td>
-    </tr>
-    <tr>
-        <td><img src="./а3.jpg" alt="Astronaut 3" width="300"></td>
-        <td align="center"><a href="https://bio3">Anousheh Ansari</a></td>
-        <td><i>"Spacewalking is the best job on Earth."</i></td>
-    </tr>
-    <tr>
-      <td><img src="./а4.jpg" alt="Astronaut 4" width="300"></td>
-      <td align="center"><a href="https://bio3">Neil Armstrong</a></td>
-      <td><i>"That's one small step for [a] man, one giant leap for mankind"</i></td>
-  </tr>
-  </table>
-  
-  <br><br>
-
-  <table border="3" cellspacing="10" cellpadding="50">
-    <colgroup>
-        <col style="width:350px">
-        <col style="width:350px">
-        <col style="width:350px">
-    </colgroup>
-    <tr>
-        <th bgcolor="#D235D2">Name of Space Mission</th>
-        <th bgcolor="#D235D2">Participants</th>
-        <th bgcolor="#D235D2">Short Information</th>
-    </tr>
-    <tr>
-        <td align="center">Apollo 11</td>
-        <td>Neil Armstrong<br>Buzz Aldrin<br>Michael Collins</td>
-        <td>The first manned mission to land on the Moon.</td>
-    </tr>
+    <table class="astronaut-table"> <thead>
+            <tr>
+              <th scope="col">Photo</th>
+              <th scope="col">Biography</th>
+              <th scope="col">Quote</th>
+            </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td><img src="./pic/а1.jpg" alt="Astronaut 1" width="300"></td>
+              <td><a href="https://bio1">Michael Fincke</a></td>
+              <td><i>"To fly in space is to see the reality of Earth, alone."</i></td>
+            </tr>
+            <tr>
+              <td><img src="./pic/а2.jpg" alt="Astronaut 2" width="300"></td>
+              <td><a href="https://bio2">Nickolas Kavandi</a></td>
+              <td><i>"Exploration is wired into our brains. If we can see the horizon, we want to know what's beyond."</i></td>
+            </tr>
+            <tr>
+              <td><img src="./pic/а3.jpg" alt="Astronaut 3" width="300"></td>
+              <td><a href="https://bio3">Anousheh Ansari</a></td>
+              <td><i>"Spacewalking is the best job on Earth."</i></td>
+            </tr>
+            <tr>
+              <td><img src="./pic/а4.jpg" alt="Astronaut 4" width="300"></td>
+              <td><a href="https://bio3">Neil Armstrong</a></td>
+              <td><i>"That's one small step for [a] man, one giant leap for mankind"</i></td>
+            </tr>
+      </tbody>
+    </table>
     
-    <tr>
-        <td colspan="3" align="center">International Space Station (ISS)</td>
-    </tr>
-    <tr>
-        <td>Expedition 1</td>
-        <td>William Shepherd<br>Sergei Krikalev<br>Yuri Gidzenko</td>
-        <td>The first long-duration crewed mission to the ISS.</td>
-    </tr>
-    <tr>
-        <td>Expedition 63</td>
-        <td>Christopher Cassidy<br>Anatoli Ivanishin<br>Ivan Vagner</td>
-        <td>The most recent expedition to the ISS as of 2022.</td>
-    </tr>
-</table>
-</center>
-  <a href="./main page.html#greeting"> Go back</a>
+    <br><br>
+    
+    <table class="mission-table"> 
+        <thead>
+            <tr>
+              <th scope="col">Name of Space Mission</th>
+              <th scope="col">Participants</th>
+              <th scope="col">Short Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Apollo 11</td>
+              <td>Neil Armstrong<br>Buzz Aldrin<br>Michael Collins</td>
+              <td>The first manned mission to land on the Moon.</td>
+            </tr>
+    
+            <tr >
+              <td colspan="3" >International Space Station (ISS)</td>
+            </tr>
+            <tr>
+              <td>Expedition 1</td>
+              <td>William Shepherd<br>Sergei Krikalev<br>Yuri Gidzenko</td>
+              <td>The first long-duration crewed mission to the ISS.</td>
+            </tr>
+            <tr>
+              <td>Expedition 63</td>
+              <td>Christopher Cassidy<br>Anatoli Ivanishin<br>Ivan Vagner</td>
+              <td>The most recent expedition to the ISS as of 2022.</td>
+            </tr>
+          </tbody>
+        </table>
+    
+  
+  <a href="./main page.html#greeting">Go back</a>
 </body>
-
 </html>
