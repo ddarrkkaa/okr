@@ -1,7 +1,7 @@
 body {
     font-size: 20;
     background-color: #fff0ff;
-    font-family:'Times New Roman', Times, serif; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
   }
   
   h1 {
@@ -22,6 +22,7 @@ body {
 
   p {
     line-height: 3; 
+    color: #2b0025;
   }
   
   #contacts a {
@@ -35,12 +36,13 @@ body {
   }
   
   .important {
-    color: #007bff !important; 
+    color: #88ff00 !important; 
   }
 
   .center{
     text-align: center;
   }
+  
 ol {
     list-style-type: upper-roman; 
     color: #ff00b7; 
