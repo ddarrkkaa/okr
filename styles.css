@@ -42,8 +42,13 @@ body {
   .center{
     text-align: center;
   }
+
+  .pic{
+    width: 800;
+    height: 500; 
+  }
   
-ol {
+  ol {
     list-style-type: upper-roman; 
     color: #ff00b7; 
     font-family: Arial, sans-serif; 
