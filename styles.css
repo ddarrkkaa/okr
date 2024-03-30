@@ -34,10 +34,6 @@ body {
     color: #ff0062; 
     font-weight: bold; 
   }
-  
-  .important {
-    color: #88ff00 !important; 
-  }
 
   .center{
     text-align: center;
@@ -47,25 +43,7 @@ body {
     width: 800;
     height: 500; 
   }
-  
-  ol {
-    list-style-type: upper-roman; 
-    color: #ff00b7; 
-    font-family: Arial, sans-serif; 
-    margin: 100px; 
-  }
-  
-  ul {
-    list-style-type: circle; 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    background-color: #bf58d1;
-    padding: 20px;
-  }
-  
-  dl {
-    margin: 1em; 
-  }
-  
+
   dt {
     font-weight: bold; 
   }
@@ -115,4 +93,17 @@ body {
     text-align: right; 
   }
   
+  I + B{
+    color: #0033ff;
+  }
   
+  H1 I{
+    background-color: #bf58d1;
+    color: #000000;
+    font-size: large;
+  } 
+
+  p > strong{
+    color: #00ff08;
+  }
+
