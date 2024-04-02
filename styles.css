@@ -10,14 +10,26 @@ body {
     color: #db70ff; 
     
   }
-  
+   
   a {
-    color: #bf58d1; 
-    text-decoration: none; 
+    color: #db70ff;
   }
-  
+
   a:hover {
-    color: #9827c8; 
+    color: #6e076e;
+  }
+
+  .links a:link,
+  .links a:visited {
+    color: #00ff22;
+  }
+
+  .links a:hover {
+    color: #fff200;
+  }
+
+  .links a:active {
+    color: #272ac8;
   }
 
   p {
@@ -107,3 +119,48 @@ body {
     color: #00ff08;
   }
 
+  .bottom-row {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fbb6ff;
+    padding: 10px 0;
+  }
+
+  .bottom-row span {
+    margin: 0 10px;
+  }
+
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
+
+  .floating-block {
+    float: left; 
+    margin-right: 20px; 
+  }
+
+  .floating-block img {
+    width: 200px; 
+    height: auto; 
+    display: block; 
+  }
+
+  ul li:first-child {
+    font-weight: bold;
+    color: #0033ff;
+}
+
+ul li:before {
+  content: "\1319B"; 
+}
+
+ol li:after {
+  content: "\1F192"; 
+}
+
+  
