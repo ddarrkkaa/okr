@@ -19,19 +19,6 @@ body {
     color: #6e076e;
   }
 
-  .links a:link,
-  .links a:visited {
-    color: #00ff22;
-  }
-
-  .links a:hover {
-    color: #fff200;
-  }
-
-  .links a:active {
-    color: #272ac8;
-  }
-
   p {
     line-height: 3; 
     color: #2b0025;
@@ -104,63 +91,43 @@ body {
   .mission-table td:nth-child(3) { 
     text-align: right; 
   }
+
+  button {
+    width: 350px;
+    height: 150px;
+    font-size: 38px;
+    background-color: #e8a3ff;
+    color: #7e087e;
+    border: none; 
+    border-radius: 90px;
+
+    &:hover {
+      background-color: #990399;
+      color: #ecbcfc;
+    }
   
-  I + B{
-    color: #0033ff;
+    &:active {
+      background-color: #7e087e;
+      color: #db70ff;
+    }
   }
-  
-  H1 I{
-    background-color: #bf58d1;
+
+  .red_button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #ff0000;
     color: #000000;
-    font-size: large;
-  } 
+    border: none; 
+    border-radius: 90px;
+    margin: 100px 0 0 0;
 
-  p > strong{
-    color: #00ff08;
+    &:hover, &:active {
+      background-color: #ff0000;
+      color: #000000;
+    }
   }
+  
 
-  .bottom-row {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #fbb6ff;
-    padding: 10px 0;
-  }
-
-  .bottom-row span {
-    margin: 0 10px;
-  }
-
-  .container {
-    width: 800px;
-    margin: 0 auto;
-    overflow: hidden; 
-  }
-
-  .floating-block {
-    float: left; 
-    margin-right: 20px; 
-  }
-
-  .floating-block img {
-    width: 200px; 
-    height: auto; 
-    display: block; 
-  }
-
-  ul li:first-child {
-    font-weight: bold;
-    color: #0033ff;
-}
-
-ul li:before {
-  content: "\1319B"; 
-}
-
-ol li:after {
-  content: "\1F192"; 
-}
 
   
