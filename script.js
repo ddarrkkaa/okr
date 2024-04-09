@@ -32,31 +32,31 @@ function exiting_button() {
     alert("This is the exiting button!");
   };
 
-// document.body.style.backgroundColor = "#bf00ff";
-// setTimeout(() => {
-//   document.body.style.backgroundColor = "#fff0ff";
-// }, 30000);
+document.body.style.backgroundColor = "#bf00ff";
+setTimeout(() => {
+  document.body.style.backgroundColor = "#fff0ff";
+}, 30000);
 
-// function change_page(){
-//     location.href = "https://www.nasa.gov";
-// }
+function change_page(){
+    location.href = "https://www.nasa.gov";
+}
 
-// const paragraph_element = document.getElementById("bla");
-// paragraph_element.innerHTML = "some text";
+const paragraph_element = document.getElementById("bla");
+paragraph_element.innerHTML = "some text";
 
-// const container_elements = document.querySelectorAll(".container");
-// for (const element of container_elements) {
-//   alert(element.innerHTML);
-//   element.remove();
-// }
+const container_elements = document.querySelectorAll(".container");
+for (const element of container_elements) {
+  alert(element.innerHTML);
+  element.remove();
+}
 
-// alert(paragraph_element.textContent)
-// alert(paragraph_element.outerHTML)
+alert(paragraph_element.textContent)
+alert(paragraph_element.outerHTML)
 
-// let text = document.body.firstChild;
-// alert(text.data);
-// let comment = text.nextSibling;
-// alert(comment.data); 
+let text = document.body.firstChild;
+alert(text.data);
+let comment = text.nextSibling;
+alert(comment.data); 
 
 const new_button = document.createElement("button");
 const new_button_text = document.createTextNode("New Button");
