@@ -9,25 +9,11 @@
 </head>
 
 <body>
-  hi
-  <!-- hi! comment  -->
-
-  <script>
-    //   alert("Hi! We are going to explore universe here!");
-
-    //   let name = prompt("So enter your nicname here:");
-    //   alert("Nice to see you " + name + "!");
-
-    //   let confirmResult = confirm("Are you ready?");
-
-    //   if (confirmResult) {
-    //     alert("nice!");
-    //   } else {
-    //     alert("(");
-    // }
-    
-  </script>
-
+  <div id="menu">
+    <button class="menu-button" data-action="save">Save</button>
+    <button class="menu-button" data-action="load">Load</button>
+    <button class="menu-button" data-action="delete">Delete</button>
+  </div>
   <div class="center-bold">
     <h1>Welcome to Space Box: Exploring the Universe in 2024</h1>
   </div>
@@ -74,7 +60,6 @@
   <br><br>
 
   <h1>Looking Ahead</h1>
-  <p id="bla">Bla bla bla</p>
   <p>
     <p class="container">2024</p>
     2024 promises to be a year of significant advancements in space exploration, laying the groundwork 
@@ -87,15 +72,21 @@
   </p>
   <br><br>
 
-  <div style="display: flex; justify-content: space-around; padding: 10px">
+  <div class="box">
     <button onclick="dialog()">Dialog</button>
     <button onclick="info('Ponomar', 'Daryna')">Info</button>
     <button onclick="compare()">Compare</button>
     <button id="existingButton" onclick="exiting_button()">Button</button>
+  </div >    
+
+  <div class="box">
+    <button id="button1">Click me twice</button>
+    <button id="button2">Click me</button>
+    <button id="button3">Click me</button>
   </div>
   
-  <button class = "red_button" onclick="change_page()">Don`t click here</button>
 
+  
   <div class="links">
     <p>Click <a href="./pic page.html">here</a> to see our gallery</p>
     <p>Click <a href="./tab page.html">here</a> to see our team</p>
@@ -104,7 +95,27 @@
   </div>
 
   <p id="contacts"><a href="mailto:m.bluth@example.com">Email</a></p>
+  <script>
+    var menu = document.getElementById("menu");
 
+    menu.addEventListener("click", function(event) {
+        if (event.target.classList.contains("menu-button")) {
+          var behavior = event.target.getAttribute("data-action");
+            
+          switch(behavior) {
+            case "save":
+                alert("Save action triggered!");
+                break;
+            case "load":
+                alert("Load action triggered!");
+                break;
+            case "delete":
+                alert("Delete action triggered!");
+                break;
+        }
+        }
+    });
+  </script>
   <script src="./script.js"></script>
 
 </body>

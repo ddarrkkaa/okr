@@ -112,22 +112,30 @@ body {
     }
   }
 
-  .red_button {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
-    background-color: #ff0000;
-    color: #000000;
-    border: none; 
-    border-radius: 90px;
-    margin: 100px 0 0 0;
-
-    &:hover, &:active {
-      background-color: #ff0000;
-      color: #000000;
-    }
+  .box {
+    display: flex; 
+    justify-content: 
+    space-around; padding: 10px
   }
-  
 
 
-  
+  ol:hover {
+    background-color: #db70ff; 
+  }
+
+  ol:active {
+  background-color: #45005c; 
+  }
+
+  .menu {
+    display: flex;
+    margin: 20px auto;
+}
+
+.menu button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #db70ff; 
+    border: none;
+    cursor: pointer;
+}

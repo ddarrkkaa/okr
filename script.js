@@ -4,15 +4,15 @@ function dialog() {
     }while (age < 0);
 
     if (age >= 18) {
-        alert("You`re an adult");
-      } else {
-        alert("You`re a child");
-      }
+      alert("You`re an adult");
+    } else {
+      alert("You`re a child");
+    }
 }
 
 function info(lastName, firstName, position = "Web Developer") {
     alert("Last Name: " + lastName + "\nName: " + firstName + "\nPosition: " + position);
-  }
+}
 
 
 function compare() {
@@ -28,55 +28,53 @@ function compare() {
     }
 }
 
-function exiting_button() {
-    alert("This is the exiting button!");
-  };
-
-document.body.style.backgroundColor = "#bf00ff";
-setTimeout(() => {
-  document.body.style.backgroundColor = "#fff0ff";
-}, 30000);
-
-function change_page(){
-    location.href = "https://www.nasa.gov";
+function handleDoubleClick() {
+  alert("Double-click event occurred!");
 }
 
-const paragraph_element = document.getElementById("bla");
-paragraph_element.innerHTML = "some text";
+// Призначення функції-обробника події через атрибут
+document.getElementById("button1").ondblclick = handleDoubleClick;
 
-const container_elements = document.querySelectorAll(".container");
-for (const element of container_elements) {
-  alert(element.innerHTML);
-  element.remove();
+// Призначення функції-обробника події через властивість
+document.getElementById("button1").addEventListener("dblclick", handleDoubleClick);
+
+
+function firstEventHandler() {
+  alert("First event handler called!");
 }
 
-alert(paragraph_element.textContent)
-alert(paragraph_element.outerHTML)
+function secondEventHandler() {
+  alert("Second event handler called!");
+}
 
-let text = document.body.firstChild;
-alert(text.data);
-let comment = text.nextSibling;
-alert(comment.data); 
+// Призначення функцій-обробників для події 'click' за допомогою addEventListener
+document.getElementById("button2").addEventListener("click", firstEventHandler);
+document.getElementById("button2").addEventListener("click", secondEventHandler);
 
-const new_button = document.createElement("button");
-const new_button_text = document.createTextNode("New Button");
+// Створення об'єкта, який містить метод handleEvent
+let eventHandlerObject = {
+  handleEvent: function(event) {
+      let targetElement = event.currentTarget;
+      alert("Event handled on element: " + targetElement.tagName);
 
-new_button.appendChild(new_button_text);
-document.body.prepend(new_button);
-const afterElement = document.querySelector(".red_button");
-afterElement.after(new_button);
-document.body.append(new_button);
-
-// new_button.remove();
-// const existing_button = document.getElementById("existing_button");
-// existing_button.replaceWith(new_button);
-
-new_button.onclick = exiting_button;
-function exiting_button() {
-    alert("This is the exiting button!");
+      targetElement.removeEventListener("click", this);
+  }
 };
 
+// Призначення об'єкта як обробника події за допомогою addEventListener
+document.getElementById("button3").addEventListener("click", eventHandlerObject);
 
+const questionList = document.getElementById('question-list');
+
+questionList.addEventListener('click', function(event) {
+  const allListItems = document.querySelectorAll('ol');
+  for (const item of allListItems) {
+    item.classList.remove('active');
+  }
+
+  const clickedItem = event.target;
+  clickedItem.classList.add('active');
+});
 
 
   

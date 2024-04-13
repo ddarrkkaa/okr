@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <h1>Space Test</h1>
 
   <p>Answer the following questions about space and space missions:</p>
@@ -40,6 +39,27 @@
   <br><br>
   <a href="./main page.html#greeting"> Go back</a>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Отримуємо список, до якого будемо додавати обробник події
+    var spaceList = document.getElementById("spaceQuestions");
+
+    // Додаємо обробник події до списку
+    spaceList.onclick = function(event) {
+        // Перевіряємо, чи клікнуто на елементі списку
+        if (event.target.tagName === "LI") {
+            // Знімаємо підсвітку з усіх елементів списку
+            var listItems = spaceList.getElementsByTagName("li");
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].classList.remove("highlighted");
+            }
+
+            // Додаємо підсвітку до клікнутого елемента
+            event.target.classList.add("highlighted");
+        }
+    };
+});
+  </script>
 </body>
 
 </html>
