@@ -114,8 +114,8 @@ body {
 
   .box {
     display: flex; 
-    justify-content: 
-    space-around; padding: 10px
+    justify-content: space-around; 
+    padding: 10px;
   }
 
 
@@ -138,4 +138,28 @@ body {
     background-color: #db70ff; 
     border: none;
     cursor: pointer;
+}
+
+#target {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(238, 255, 0);
+  margin: 50px auto;
+  text-align: center;
+  line-height: 200px;
+}
+
+#draggable {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(77, 255, 118);
+  position: absolute;
+  cursor: move;
+}
+
+#div1 {
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #db70ff; 
 }

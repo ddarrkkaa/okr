@@ -85,6 +85,17 @@
     <button id="button3">Click me</button>
   </div>
   
+  <div id="target">Hover here</div>
+  <p id="log"></p>
+
+  <h1>Move pic</h1>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <img id="drag1" src="./pic/2.jpg" draggable="true" ondragstart="drag(event)" width="150" height="70">
+
+  </script>
+  <script src="./script.js"></script>
 
   
   <div class="links">
@@ -96,11 +107,11 @@
 
   <p id="contacts"><a href="mailto:m.bluth@example.com">Email</a></p>
   <script>
-    var menu = document.getElementById("menu");
+    let menu = document.getElementById("menu");
 
     menu.addEventListener("click", function(event) {
         if (event.target.classList.contains("menu-button")) {
-          var behavior = event.target.getAttribute("data-action");
+          let behavior = event.target.getAttribute("data-action");
             
           switch(behavior) {
             case "save":
@@ -115,10 +126,40 @@
         }
         }
     });
-  </script>
-  <script src="./script.js"></script>
 
+    let target_element = document.getElementById('target');
+
+    target_element.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundColor = 'lightgreen';
+    });
+
+    target_element.addEventListener('mouseout', function(event) {
+    event.target.style.backgroundColor = 'lightblue';
+    });
+
+    let targetElement = document.getElementById('target');
+    let logElement = document.getElementById('log');
+
+    targetElement.addEventListener('mouseout', function(event) {
+        let related = event.relatedTarget ? event.relatedTarget.id : "unknown";
+        logElement.innerText = `\ncolour is changed ${logElement.innerText}`; 
+    });
+
+    function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
 </body>
 
-</html>
+
 
